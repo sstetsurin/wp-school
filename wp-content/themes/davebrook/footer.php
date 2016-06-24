@@ -51,8 +51,8 @@
         </div>
     </div>
     <a href="#" class="sitemap-button">open sitemap</a>
+    <div class="line"></div>
 </div>
-<div class="line"></div>
 
 <div class="sitemap clearfix">
     <div class="container">

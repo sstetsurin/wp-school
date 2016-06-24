@@ -1,0 +1,33 @@
+.academics {
+	.col-md-4 {
+		padding-left: 0px;
+		img {
+			padding-bottom: 35px;
+		}
+		.dir-menu-item {
+			h3 {
+				font-size:23px;
+				color: #444343;
+				font-weight: 600;	
+				margin: 0 0 5px 0;	
+			}
+			small {
+				color: #f25d22;
+				font-size: 14px;
+				font-weight: 300;
+			}
+			ul {
+
+				li {
+					padding-top:20px;
+					.glyphicon {
+						font-size: 8px;
+						top:-1px;
+						right:10px;
+						color:#f25d22;
+					}
+				}
+			}
+		}
+	}
+}

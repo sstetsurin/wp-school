@@ -1,0 +1,273 @@
+.footer-wrap {
+	height: auto;
+	background-color: rgba(224, 224, 216, 0.85);
+	position: relative;
+	bottom:0;
+	width:100%;
+	.footer {
+		padding: 33px 0 0;
+	}
+	.sitemap-button {
+		height:27px;
+		width:222px;
+		display:block;
+		// position: absolute;
+		position:relative;
+		margin:0 auto;
+		// bottom:19px;
+		// margin:0 auto;
+		// left:0;
+		// right:0;
+		bottom: -1px;
+		background-color: #e0e0d8;
+		border-top-left-radius:5px;
+		border-top-right-radius:5px;
+		color: #3e3f41;
+		font-family: Calibri;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 32px;
+		text-transform: uppercase;
+		text-align: center;
+		text-decoration: none;
+		border-bottom:1px solid #e8e8e0;
+		border-right:1px solid #cdcdc2;
+		border-left:1px solid #cdcdc2;
+		border-top:1px solid #cdcdc2;
+		z-index: 999999;
+		// display:block;
+
+					&:after {
+				content: "";
+			    display: block;
+			    background: url(/wp-content/themes/davebrook/images/arrow-sprite.png);
+			    background-repeat: no-repeat;
+			    float: right;
+			    margin:	8px 50px 0px -65px;
+			    width: 14px;
+			    height: 12px;
+			    background-position: 0 -2px;
+			}	
+	}
+	.line {
+		height:21px;
+		width:100%; 
+		background-color: #e0e0d8;
+		position: relative;
+		bottom:0;
+		border-top:1px solid #cdcdc2;
+	}
+	.address {
+		font-family: "Myriad Pro";
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 14px;
+		color: #2a2a2a;
+		a {
+			padding:0 15px;
+		}
+		ul {
+			& > li {
+				padding: 0 20px;
+				float:left;
+				border-right:1px solid #eb854e;
+				&:last-child {
+					border:none;
+				}
+			}
+		}
+		.sitename {
+			padding-left: 60px;
+			font-weight: 600;
+		}
+	}
+
+	.bottom {
+		padding: 15px 0;
+		.left-menu {
+			float:left;
+			padding-right:130px;
+
+			ul {
+				&>li {
+					float:left;
+					&>a {
+						padding:4px 40px;
+						color: #292929;
+						font-family: "Myriad Pro";
+						font-size: 14px;
+						font-weight: 400;
+						&:hover, &:active, &:focus {
+							color: #292929;
+							background-color: inherit;
+						}
+					}
+					&.sprite-bottom-menu {
+					    // background-image: url(/wp-content/themes/davebrook/images/footer-sprite.png);
+					    // background-repeat: no-repeat;
+					    // display: block;
+					    &.gallery {
+						    &:before {
+							    content: "";
+							    display: block;
+							    background: url(/wp-content/themes/davebrook/images/footer-sprite.png);
+	    					    background-repeat: no-repeat;
+							    float: left;
+							    margin: 0 6px 0 0;
+    				    	    width: 33px;
+							    height: 28px;
+							    background-position: -5px -4px;
+							}
+					    }
+					    &.news {
+					    	&:before {
+					    		content: "";
+							    display: block;
+							    background: url(/wp-content/themes/davebrook/images/footer-sprite.png);
+	    					    background-repeat: no-repeat;
+							    float: left;
+							    margin: 0 6px 0 0;
+								width: 33px;
+							    height: 26px;
+							    background-position: -48px -2px;
+					    	}
+					    }
+					}
+				}
+			}
+		}
+		.copyright {
+			float:left;
+			font-family: "Myriad Pro";
+			font-size: 14px;
+			color: #292929;
+			font-weight: 400;
+			padding-top: 9px;
+			span {
+				padding:0 10px;
+				&:last-child {
+					border-left:1px solid #292929;
+					color: #d40707;
+					font-weight: 700;
+				}
+			}
+		}
+		.social-footer-wrap {
+			float:left;
+			padding-left:50px;
+			.social-sprite {
+				float:left;
+				margin:0 11px;
+				background-repeat: no-repeat;
+			    display: block;
+			    width:36px;
+			    height:40px;
+		    	background-image: url(/wp-content/themes/davebrook/images/social-icon-footer-sprite.png);
+
+		    	&.tw {
+					background-position: 0 0;
+		    	}
+		    	&.insta {
+					background-position: -49px 0;
+		    	}
+		    	&.youtube {
+					background-position: -99px 0;
+		    	}
+		    	&.fb {
+					background-position: -147px 0;
+		    	}
+		    	&.ln {
+		    		background-position: -196px 0;	
+		    	}
+			}
+
+		}
+	}
+}
+.sitemap {
+	display:none;
+	background-color: #e0e0d8;
+	height:300px;
+	width:100%;
+	.menu {
+		width:19.99999%;
+		float:left;
+		padding:0 35px;
+		&:last-child {
+			text-align: right;
+			padding:0 70px 0 0;
+		}
+		.nav li {
+			color: #292929;
+			line-height: 35px;
+			font-family: "Myriad Pro";
+			font-size: 14px;
+			font-weight: 400;
+			&:first-child {
+				font-size: 21px;
+				font-weight: 600;
+				text-transform: uppercase;
+			}
+		}
+		&:before {
+			content: "";
+			display:block;
+			width:35px;
+			height:3px;
+			background-color: #ed631d;
+			margin:20px 0;
+		}
+		&:last-child:before {
+			content: "";
+			display:block;
+			width:35px;
+			height:3px;
+			background-color: #ed631d;
+			margin:20px 45px;
+		}
+	}
+}
+
+// .custom-page {
+// 	.footer-wrap {
+// 		height:auto;
+// 		position: relative;
+// 		.line {
+// 			position:relative;
+// 			border-top:1px solid #cdcdc2;
+// 		}
+// 		.sitemap-button {
+// 			height:27px;
+// 			position:relative;
+// 			text-align: center;
+// 			display:block;
+// 			text-decoration: none;
+// 			bottom:-1px;
+// 			border-bottom:1px solid #e8e8e0;
+// 			border-right:1px solid #cdcdc2;
+// 			border-left:1px solid #cdcdc2;
+// 			border-top:1px solid #cdcdc2;
+// 			z-index: 999999;
+
+// 		}
+// 	}
+// }
+
+.home {
+	.footer-wrap {
+		height: 150px;
+		position: absolute;
+	}
+	.line {
+		position: absolute;
+		bottom:-20px;
+		border-top:1px solid #cdcdc2;
+	}
+	.sitemap-button {
+		position: absolute;
+		bottom:0px;
+		margin:0 auto;
+		left:0;
+		right:0;
+	}
+}

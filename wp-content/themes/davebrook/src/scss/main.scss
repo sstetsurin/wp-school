@@ -1,0 +1,74 @@
+.main-page-carousel {
+	.item {
+		// height:580px;
+		width:100%;
+        height:850px;;
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+	}
+	.item1 {
+		background-image: url("/wp-content/themes/davebrook/images/layer-22.jpg")
+	}
+	.item2 {
+		background-image: url("/wp-content/themes/davebrook/images/layer-23.jpg")
+	}
+	.item3 {
+		background-image: url("/wp-content/themes/davebrook/images/layer-24.jpg")
+	}
+	.carousel-caption {
+		background-color: rgba(0, 0, 0, 0.4);
+		height:330px;
+		position:absolute;
+		top:195px;
+		left:0;
+		width:100%;
+		& h1.title {
+			color: white;
+			font-family: "Myriad Pro";
+			font-size: 51px;
+			font-weight: 700;
+			line-height: 64px;
+			text-transform: uppercase;
+		}
+		& p.text {
+			font-size: 30px;
+			font-weight: 400;
+			line-height: 30px;
+		}
+		& .more-btn {
+			color: white;
+			font-family: "Myriad Pro";
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 64px;
+			text-transform: uppercase;
+		    display: inline-block;
+		    width: 215px;
+		    border: 1px solid #fff;
+		    text-align: center;
+		    outline: none;
+		    text-decoration: none;
+		    position:absolute;
+		    margin:0 auto;
+		    left:0;
+		    right:0;
+		    bottom:45px;
+		}
+	}
+		.carousel-indicators {
+			bottom:150px;
+			li {
+				background-color: #fff;
+				border-color: #69635f;
+
+				&.active {
+					background-color: #f07335;
+				}
+			}
+		}
+}

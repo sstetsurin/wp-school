@@ -98,7 +98,7 @@ ul {
 .other-links li a:before {
   content: "";
   display: block;
-  background: url(/wp-content/themes/davebrook/images/arrow-sprite.png);
+  background: url(../assets/image/arrow-sprite.png);
   background-repeat: no-repeat;
   float: left;
   margin: 7px 0px 0 6px;
@@ -134,7 +134,7 @@ ul {
 .portal-link a:after {
   content: "";
   display: block;
-  background: url(/wp-content/themes/davebrook/images/arrow-sprite.png);
+  background: url(../assets/image/arrow-sprite.png);
   background-repeat: no-repeat;
   float: right;
   margin: 11px 25px 0 0px;
@@ -155,7 +155,7 @@ ul {
   display: block;
   width: 20px;
   height: 15px;
-  background-image: url(/wp-content/themes/davebrook/images/social-sprite.png);
+  background-image: url(../assets/image/social-sprite.png);
 }
 
 .social-wrap .social-sprite.insta {
@@ -220,18 +220,14 @@ ul {
   float: left;
 }
 
-.bottom-nav .main-nav .menu-menu-1-container {
-  overflow: hidden;
-}
-
 .bottom-nav .main-nav .menu-item {
   float: left;
   font-family: "Myriad Pro";
   font-size: 16px;
   font-weight: 300;
-  line-height: 90px;
+  line-height: 24px;
   text-transform: uppercase;
-  padding: 0px 30px;
+  padding: 36px 30px;
   border-left: 1px solid #ececea;
 }
 
@@ -245,13 +241,13 @@ ul {
 }
 
 .bottom-nav .main-nav .menu-item:last-child {
-  padding: 0px 0 0px 25px;
+  padding: 30px 0 36px 25px;
 }
 
 .footer-wrap {
-  height: auto;
+  height: 150px;
   background-color: rgba(224, 224, 216, 0.85);
-  position: relative;
+  position: absolute;
   bottom: 0;
   width: 100%;
 }
@@ -263,10 +259,11 @@ ul {
 .footer-wrap .sitemap-button {
   height: 27px;
   width: 222px;
-  display: block;
-  position: relative;
+  position: absolute;
+  bottom: 19px;
   margin: 0 auto;
-  bottom: -1px;
+  left: 0;
+  right: 0;
   background-color: #e0e0d8;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -277,7 +274,6 @@ ul {
   line-height: 32px;
   text-transform: uppercase;
   text-align: center;
-  text-decoration: none;
   border-bottom: 1px solid #e8e8e0;
   border-right: 1px solid #cdcdc2;
   border-left: 1px solid #cdcdc2;
@@ -288,7 +284,7 @@ ul {
 .footer-wrap .sitemap-button:after {
   content: "";
   display: block;
-  background: url(/wp-content/themes/davebrook/images/arrow-sprite.png);
+  background: url(../assets/image/arrow-sprite.png);
   background-repeat: no-repeat;
   float: right;
   margin: 8px 50px 0px -65px;
@@ -301,7 +297,7 @@ ul {
   height: 21px;
   width: 100%;
   background-color: #e0e0d8;
-  position: relative;
+  position: absolute;
   bottom: 0;
   border-top: 1px solid #cdcdc2;
 }
@@ -312,10 +308,6 @@ ul {
   font-size: 14px;
   line-height: 14px;
   color: #2a2a2a;
-}
-
-.footer-wrap .address a {
-  padding: 0 15px;
 }
 
 .footer-wrap .address ul > li {
@@ -334,7 +326,7 @@ ul {
 }
 
 .footer-wrap .bottom {
-  padding: 15px 0;
+  padding: 20px 0;
 }
 
 .footer-wrap .bottom .left-menu {
@@ -362,7 +354,7 @@ ul {
 .footer-wrap .bottom .left-menu ul > li.sprite-bottom-menu.gallery:before {
   content: "";
   display: block;
-  background: url(/wp-content/themes/davebrook/images/footer-sprite.png);
+  background: url(../assets/image/footer-sprite.png);
   background-repeat: no-repeat;
   float: left;
   margin: 0 6px 0 0;
@@ -374,7 +366,7 @@ ul {
 .footer-wrap .bottom .left-menu ul > li.sprite-bottom-menu.news:before {
   content: "";
   display: block;
-  background: url(/wp-content/themes/davebrook/images/footer-sprite.png);
+  background: url(../assets/image/footer-sprite.png);
   background-repeat: no-repeat;
   float: left;
   margin: 0 6px 0 0;
@@ -414,7 +406,7 @@ ul {
   display: block;
   width: 36px;
   height: 40px;
-  background-image: url(/wp-content/themes/davebrook/images/social-icon-footer-sprite.png);
+  background-image: url(../assets/image/social-icon-footer-sprite.png);
 }
 
 .footer-wrap .bottom .social-footer-wrap .social-sprite.tw {
@@ -487,23 +479,28 @@ ul {
   margin: 20px 45px;
 }
 
-.home .footer-wrap {
-  height: 150px;
-  position: absolute;
+.custom-page .footer-wrap {
+  height: auto;
+  position: relative;
 }
 
-.home .line {
-  position: absolute;
-  bottom: -20px;
+.custom-page .footer-wrap .line {
+  position: relative;
   border-top: 1px solid #cdcdc2;
 }
 
-.home .sitemap-button {
-  position: absolute;
-  bottom: 0px;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
+.custom-page .footer-wrap .sitemap-button {
+  height: 27px;
+  position: relative;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  bottom: -1px;
+  border-bottom: 1px solid #e8e8e0;
+  border-right: 1px solid #cdcdc2;
+  border-left: 1px solid #cdcdc2;
+  border-top: 1px solid #cdcdc2;
+  z-index: 999999;
 }
 
 .main-page-carousel .item {
@@ -512,22 +509,19 @@ ul {
   background-repeat: no-repeat;
   background-position: 50% 0;
   -ms-background-size: cover;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
   background-size: cover;
 }
 
 .main-page-carousel .item1 {
-  background-image: url("/wp-content/themes/davebrook/images/layer-22.jpg");
+  background-image: url("../assets/image/layer-22.jpg");
 }
 
 .main-page-carousel .item2 {
-  background-image: url("/wp-content/themes/davebrook/images/layer-23.jpg");
+  background-image: url("../assets/image/layer-23.jpg");
 }
 
 .main-page-carousel .item3 {
-  background-image: url("/wp-content/themes/davebrook/images/layer-24.jpg");
+  background-image: url("../assets/image/layer-24.jpg");
 }
 
 .main-page-carousel .carousel-caption {

@@ -1,0 +1,51 @@
+/*common styles*/
+
+/*orange #f25d22*/
+* {
+	box-sizing:border-box;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 1185px !important;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 1185px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1185px !important;
+  }
+}
+
+body {
+	font-family: 'Myriad Pro';
+	margin:0;
+	font-size: 14px;
+	color: #444343;
+
+
+}
+a {
+	text-decoration: none;
+	color: #444343;
+
+
+	&:hover {
+		text-decoration: none;
+		color: #444343;
+	}
+}
+ul {
+	list-style: none;
+		border-radius:1px;
+}
+.cf::after {
+	content: '';
+	display: block;
+	height: 0;
+	clear:both;
+	visibility: hidden;
+}

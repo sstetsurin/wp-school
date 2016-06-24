@@ -1,0 +1,51 @@
+.left-sidebar-wrap {
+	background-color: #616161;
+	padding: 0;
+	.dark-line {
+		height:30px;
+		width:100%;
+		background-color: #444343
+	}
+	.sidebar-menu {
+		font-family: "Myriad Pro";
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+		.page_item {
+			a {
+				color: white;
+				line-height: 62px;
+				padding: 0 0 0 35px;
+				&:hover, &:focus, &:visited {
+					background-color: inherit;
+					text-transform: none;
+				}
+			}
+			&.current_page_item, &.current_page_parent, &.current_page_ancestor {
+					background-color: #a9a9a9;
+				}
+		}
+		.children {
+			background-color: #eaeaea;
+			margin:0;
+			padding: 10px 0;
+			.page_item {
+				padding-left: 45px;
+				font-weight: 400;
+				a {
+					line-height: 40px;
+					padding-left: 15px;
+					color: #444343;
+					text-transform:none;
+				}
+
+				&.current_page_item {
+					background-color: #eaeaea;
+					a {
+						color: #f25d22;
+					}
+				}
+			}
+		}
+	}
+}
