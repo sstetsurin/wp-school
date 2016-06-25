@@ -634,7 +634,6 @@ ul {
 
 .left-sidebar-wrap .sidebar-menu .page_item a:hover, .left-sidebar-wrap .sidebar-menu .page_item a:focus, .left-sidebar-wrap .sidebar-menu .page_item a:visited {
   background-color: inherit;
-  text-transform: none;
 }
 
 .left-sidebar-wrap .sidebar-menu .page_item.current_page_item, .left-sidebar-wrap .sidebar-menu .page_item.current_page_parent, .left-sidebar-wrap .sidebar-menu .page_item.current_page_ancestor {
