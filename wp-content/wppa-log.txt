@@ -1,0 +1,11 @@
+{b}Obs{/b}: on:June 25, 2016 11:34 am: admin: Created path: C:/work/OpenServer/domains/wp-school.dev/wp-content/uploads/wppa
+{b}Obs{/b}: on:June 25, 2016 11:34 am: admin: Created path: C:/work/OpenServer/domains/wp-school.dev/wp-content/uploads/wppa/thumbs
+{b}Obs{/b}: on:June 25, 2016 11:34 am: admin: Created path: C:/work/OpenServer/domains/wp-school.dev/wp-content/wppa-depot
+{b}Obs{/b}: on:June 25, 2016 11:34 am: admin: Created path: C:/work/OpenServer/domains/wp-school.dev/wp-content/wppa-depot/admin
+{b}Obs{/b}: on:June 25, 2016 11:34 am: admin: Created path: C:/work/OpenServer/domains/wp-school.dev/wp-content/uploads/wppa/watermarks
+{b}Obs{/b}: on:June 25, 2016 11:34 am: admin: Created path: C:/work/OpenServer/domains/wp-school.dev/wp-content/uploads/wppa/fonts
+{b}Obs{/b}: on:June 25, 2016 11:34 am: admin: Created path: C:/work/OpenServer/domains/wp-school.dev/wp-content/uploads/wppa/temp/
+{b}Obs{/b}: on:June 25, 2016 11:37 am: admin: Created path: C:/work/OpenServer/domains/wp-school.dev/wp-content/wppa-pl
+{b}Obs{/b}: on:June 25, 2016 11:47 am: admin: Created path: C:/work/OpenServer/domains/wp-school.dev/wp-content/uploads/wppa-source
+{b}Obs{/b}: on:June 25, 2016 11:47 am: admin: Created path: C:/work/OpenServer/domains/wp-school.dev/wp-content/uploads/wppa-source/album-1
+{b}Obs{/b}: on:June 25, 2016 11:49 am: admin: Created path: C:/work/OpenServer/domains/wp-school.dev/wp-content/uploads/wppa-source/album-3

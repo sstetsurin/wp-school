@@ -7,29 +7,33 @@
  * @package davebrook
  */
 
-get_header(); ?>
+get_header();
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+?>
+	<div class="content-wrapper clearfix">
+		<div class="container">
+			<div class="breadcrumbs-wrap col-md-12">
+				<?php if(function_exists(breadcrumbs)) {breadcrumbs(' / ');} ?>
+			</div>
+			<div class="left-sidebar-wrap col-md-3">
+				<div class="dark-line"></div>
+				<div class="sidebar-menu">
+					<ul class="nav">
+						<?php wp_list_pages(array('child_of' => getPageParentId(135), 'title_li' => '', 'sort_column' => 'post_date')); ?>
+					</ul>
+				</div>
+			</div>
+			<div class="page-content col-md-9">
+				<?php
+				while ( have_posts() ) : the_post();
 
-		<?php
-		while ( have_posts() ) : the_post();
+					get_template_part( 'template-parts/content', 'post' );
 
-			get_template_part( 'template-parts/content', get_post_format() );
-
-			the_post_navigation();
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-		endwhile; // End of the loop.
-		?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+				endwhile; // End of the loop.
+				?>
+			</div>
+		</div>
+	</div>
 
 <?php
-get_sidebar();
 get_footer();

@@ -230,4 +230,40 @@ function getPageParentId($term_id) {
 	return @$ancestors[0];
 }
 
+function getNews() {
+	$posts_array = get_posts(
+		array(
+			'posts_per_page' => -1,
+			'post_type' => 'post',
+			'orderby' => 'post_date',
+			'order'   => 'DESC',
+			'tax_query' => array(
+				array(
+					'taxonomy' => 'category',
+					'field' => 'term_id',
+					'terms' => 8,
+				)
+			)
+		)
+	);
+	//echo '<pre>';var_dump($posts_array); echo '</pre>'; exit;
+	return $posts_array;
+}
+
+function get_snippet( $str, $wordCount = 55 ) {
+	return implode(
+		'',
+		array_slice(
+			preg_split(
+				'/([\s,\.;\?\!]+)/',
+				$str,
+				$wordCount*2+1,
+				PREG_SPLIT_DELIM_CAPTURE
+			),
+			0,
+			$wordCount*2-1
+		)
+	);
+}
+
 ?>
