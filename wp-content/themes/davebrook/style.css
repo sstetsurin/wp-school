@@ -248,6 +248,39 @@ ul {
   padding: 0px 0 0px 25px;
 }
 
+.bottom-nav .main-nav .sub-menu {
+  display: none;
+  position: absolute;
+  top: 130px;
+  z-index: 999999;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.bottom-nav .main-nav .sub-menu.hover {
+  display: block;
+}
+
+.bottom-nav .main-nav .sub-menu li {
+  float: left;
+  clear: both;
+  width: 100%;
+  padding: 5px 20px;
+  line-height: 70px;
+  text-align: center;
+  border-top: 1px solid #e8e9e4;
+}
+
+.bottom-nav .main-nav .sub-menu li a {
+  font-weight: 300;
+  text-transform: none;
+  font-size: 14px;
+}
+
+.bottom-nav .main-nav .sub-menu .menu-item:last-child {
+  padding: 5px 20px;
+}
+
 .footer-wrap {
   height: auto;
   background-color: rgba(224, 224, 216, 0.85);
