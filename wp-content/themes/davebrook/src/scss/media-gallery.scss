@@ -1,0 +1,30 @@
+.album-list-page {
+	.text-list {
+		ul {
+			li {
+				float:left;
+				padding: 10px 20px;
+				a {
+					font-size: 14px;
+					line-height: 19px;
+					text-transform: uppercase;
+					color: #949191;
+					font-weight: 400;
+				}
+				&.active {
+					background-color: #a9a9a9;
+					a {
+						color:white;
+					}
+				}
+			}
+		}
+	}
+
+	.image-list {
+		padding: 35px 0;
+		.album-item {
+			padding: 1px;
+		}
+	}
+}

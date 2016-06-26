@@ -67,6 +67,7 @@ ul {
   height: 90px;
   width: 100%;
   float: left;
+  border-bottom: 1px solid #e6e6dd;
 }
 
 .other-links {
@@ -145,7 +146,7 @@ ul {
 
 .social-wrap {
   float: left;
-  padding: 12px 90px;
+  padding: 12px 65px;
 }
 
 .social-wrap .social-sprite {
@@ -218,6 +219,7 @@ ul {
 
 .bottom-nav .main-nav {
   float: left;
+  margin-left: -40px;
 }
 
 .bottom-nav .main-nav .menu-menu-1-container {
@@ -251,7 +253,7 @@ ul {
 .bottom-nav .main-nav .sub-menu {
   display: none;
   position: absolute;
-  top: 130px;
+  top: 162px;
   z-index: 999999;
   padding: 0;
   background-color: rgba(255, 255, 255, 0.95);
@@ -268,7 +270,7 @@ ul {
   padding: 5px 20px;
   line-height: 70px;
   text-align: center;
-  border-top: 1px solid #e8e9e4;
+  border: 1px solid #e8e9e4;
 }
 
 .bottom-nav .main-nav .sub-menu li a {
@@ -624,6 +626,7 @@ ul {
   background-color: #FFF;
   margin: 0;
   padding: 15px;
+  text-transform: capitalize;
 }
 
 .breadcrumbs-wrap li {
@@ -704,6 +707,7 @@ ul {
 }
 
 .page-content {
+  min-height: 400px;
   padding-left: 60px;
 }
 
@@ -877,6 +881,10 @@ ul {
   font-weight: 600;
 }
 
+.envirabox-overlay {
+  z-index: 999999 !important;
+}
+
 .academics .col-md-4 {
   padding-left: 0px;
 }
@@ -907,4 +915,33 @@ ul {
   top: -1px;
   right: 10px;
   color: #f25d22;
+}
+
+.album-list-page .text-list ul li {
+  float: left;
+  padding: 10px 20px;
+}
+
+.album-list-page .text-list ul li a {
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #949191;
+  font-weight: 400;
+}
+
+.album-list-page .text-list ul li.active {
+  background-color: #a9a9a9;
+}
+
+.album-list-page .text-list ul li.active a {
+  color: white;
+}
+
+.album-list-page .image-list {
+  padding: 35px 0;
+}
+
+.album-list-page .image-list .album-item {
+  padding: 1px;
 }

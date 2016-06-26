@@ -12,6 +12,7 @@
 	height:90px;
 	width:100%;
 	float:left;
+	border-bottom: 1px solid #e6e6dd;
 }
 .other-links {
 	width:450px;
@@ -85,7 +86,7 @@
 }
 .social-wrap {
 	float:left;
-	padding:12px 90px;
+	padding:12px 65px;
 
 	.social-sprite {
 		float:left;
@@ -147,6 +148,7 @@
 	}
 	.main-nav {
 		float:left;
+		margin-left: -40px;
 		.menu-menu-1-container {
 			overflow: hidden;
 		}
@@ -173,7 +175,7 @@
 		.sub-menu {
 			display:none;
 		    position: absolute;
-			top: 130px;
+			top: 162px;
 			z-index: 999999;
 			padding: 0;
 			background-color: rgba(255, 255, 255, 0.95);
@@ -185,7 +187,7 @@
     			padding: 5px 20px;
     			line-height: 70px;
     			text-align: center;
-    			border-top:1px solid #e8e9e4;
+    			border:1px solid #e8e9e4;
     			a {
     				font-weight: 300;
     				text-transform: none;
