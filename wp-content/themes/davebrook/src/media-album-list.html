@@ -8,7 +8,11 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Raleway:700' rel='stylesheet' type='text/css'>
+    <!-- <link rel="stylesheet" href="css/demo.css" type="text/css" media="screen" /> -->
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
     <link rel="stylesheet" type="text/css" href="../style.css">
+		<!-- Modernizr -->
+	<script src="js/modernizr.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -116,6 +120,98 @@
 								<div class="col-md-4 album-item"> <a href="#"><img src="assets/image/pages/album-list-6.jpg" alt="" class="img-responsive"></a></div>
 <!-- 							</div> -->
 						</div>
+						
+
+						<div class="slider-block loading">
+							<div id="container" class="cf">
+							<div id="main" role="main">
+							  <section class="slider">
+							    <div id="slider" class="flexslider">
+							      <ul class="slides">
+							        <li>
+								    	    <img src="assets/image/slider/kitchen_adventurer_cheesecake_brownie.jpg" />
+								    		</li>
+								    		<li>
+								    	    <img src="assets/image/slider/kitchen_adventurer_lemon.jpg" />
+								    		</li>
+								    		<li>
+								    	    <img src="assets/image/slider/kitchen_adventurer_donut.jpg" />
+								    		</li>
+								    		<li>
+								    	    <img src="assets/image/slider/kitchen_adventurer_caramel.jpg" />
+								    		</li>
+							        <li>
+								    	    <img src="assets/image/slider/kitchen_adventurer_cheesecake_brownie.jpg" />
+								    		</li>
+								    		<li>
+								    	    <img src="assets/image/slider/kitchen_adventurer_lemon.jpg" />
+								    		</li>
+								    		<li>
+								    	    <img src="assets/image/slider/kitchen_adventurer_donut.jpg" />
+								    		</li>
+								    		<li>
+								    	    <img src="assets/image/slider/kitchen_adventurer_caramel.jpg" />
+								    		</li>
+							        <li>
+								    	    <img src="assets/image/slider/kitchen_adventurer_cheesecake_brownie.jpg" />
+								    		</li>
+								    		<li>
+								    	    <img src="assets/image/slider/kitchen_adventurer_lemon.jpg" />
+								    		</li>
+								    		<li>
+								    	    <img src="assets/image/slider/kitchen_adventurer_donut.jpg" />
+								    		</li>
+								    		<li>
+								    	    <img src="assets/image/slider/kitchen_adventurer_caramel.jpg" />
+								    		</li>
+							      </ul>
+							    </div>
+							    <div id="carousel" class="flexslider">
+							      <ul class="slides">
+							        <li>
+								    	    <img src="assets/image/slider/kitchen_adventurer_cheesecake_brownie.jpg" />
+								    		</li>
+								    		<li>
+								    	    <img src="assets/image/slider/kitchen_adventurer_lemon.jpg" />
+								    		</li>
+								    		<li>
+								    	    <img src="assets/image/slider/kitchen_adventurer_donut.jpg" />
+								    		</li>
+								    		<li>
+								    	    <img src="assets/image/slider/kitchen_adventurer_caramel.jpg" />
+								    		</li>
+							        <li>
+								    	    <img src="assets/image/slider/kitchen_adventurer_cheesecake_brownie.jpg" />
+								    		</li>
+								    		<li>
+								    	    <img src="assets/image/slider/kitchen_adventurer_lemon.jpg" />
+								    		</li>
+								    		<li>
+								    	    <img src="assets/image/slider/kitchen_adventurer_donut.jpg" />
+								    		</li>
+								    		<li>
+								    	    <img src="assets/image/slider/kitchen_adventurer_caramel.jpg" />
+								    		</li>
+							        <li>
+								    	    <img src="assets/image/slider/kitchen_adventurer_cheesecake_brownie.jpg" />
+								    		</li>
+								    		<li>
+								    	    <img src="assets/image/slider/kitchen_adventurer_lemon.jpg" />
+								    		</li>
+								    		<li>
+								    	    <img src="assets/image/slider/kitchen_adventurer_donut.jpg" />
+								    		</li>
+								    		<li>
+								    	    <img src="assets/image/slider/kitchen_adventurer_caramel.jpg" />
+								    		</li>
+							      </ul>
+							    </div>
+							  </section>
+
+							</div>
+
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>	
@@ -222,6 +318,48 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	<script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+
+
+	<!-- FlexSlider -->
+	<script defer src="js/jquery.flexslider.js"></script>
+
+	<script type="text/javascript">
+	$(function(){
+	  SyntaxHighlighter.all();
+	});
+	$(window).load(function(){
+	  $('#carousel').flexslider({
+	    animation: "slide",
+	    controlNav: false,
+	    animationLoop: false,
+	    slideshow: false,
+	    itemWidth: 130,
+	    itemMargin: 10,
+	    asNavFor: '#slider'
+	  });
+
+	  $('#slider').flexslider({
+	    animation: "slide",
+	    controlNav: false,
+	    animationLoop: false,
+	    slideshow: false,
+	    sync: "#carousel",
+	    start: function(slider){
+	      $('.slider-block').removeClass('loading');
+	    }
+	  });
+	});
+	</script>
+<!-- 
+	<script type="text/javascript" src="js/shCore.js"></script>
+	<script type="text/javascript" src="js/shBrushXml.js"></script>
+	<script type="text/javascript" src="js/shBrushJScript.js"></script>
+ -->
+	<!-- Optional FlexSlider Additions -->
+	<script src="js/jquery.easing.js"></script>
+	<script src="js/jquery.mousewheel.js"></script>
+	<script defer src="js/demo.js"></script>
+
 	<script src="../js/main.js"></script>
 </body>
 </html>

@@ -28,3 +28,28 @@
 		}
 	}
 }
+
+.slider-block {
+	#slider.flexslider {
+		box-shadow: 0 0 9.8px 0.2px rgba(31, 31, 30, 0.46);
+    	border: 12px solid #fff;
+	    border-radius: 3px;
+	    .flex-direction-nav {
+	    	display:none;
+	    	a {
+	    		margin:-20px 0 0;
+	    	}
+	    }
+	}
+	#carousel.flexslider {
+		border-right: 40px solid #f2f3f4;
+		border-left: 40px solid #f2f3f4;
+		padding: 10px;
+		background-color: #f2f3f4;
+	    .flex-direction-nav {
+	    	a {
+	    		margin:-34px -40px 0;
+	    	}
+	    }
+	}
+}

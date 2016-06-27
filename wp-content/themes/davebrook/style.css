@@ -1,5 +1,15 @@
 /*common styles*/
-/*orange #f25d22*/
+body {
+  font-family: MyriadPro, sans-serif;
+}
+
+@font-face {
+  body {
+    font-family: MyriadPro;
+    src: url("assets/fonts/MyriadPro-Regular.otf") format("opentype");
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -27,6 +37,13 @@ body {
   margin: 0;
   font-size: 14px;
   color: #444343;
+}
+
+@font-face {
+  body {
+    font-family: "Myriad Pro";
+    src: url("../assets/fonts/MyriadPro/MyriadPro-Regular.otf") format("opentype");
+  }
 }
 
 a {
@@ -253,7 +270,7 @@ ul {
 .bottom-nav .main-nav .sub-menu {
   display: none;
   position: absolute;
-  top: 162px;
+  top: 130px;
   z-index: 999999;
   padding: 0;
   background-color: rgba(255, 255, 255, 0.95);
@@ -707,7 +724,7 @@ ul {
 }
 
 .page-content {
-  min-height: 400px;
+  min-height: 500px;
   padding-left: 60px;
 }
 
@@ -885,32 +902,32 @@ ul {
   z-index: 999999 !important;
 }
 
-.academics .col-md-4 {
+.page-id-44 .col-md-4 {
   padding-left: 0px;
 }
 
-.academics .col-md-4 img {
+.page-id-44 .col-md-4 img {
   padding-bottom: 35px;
 }
 
-.academics .col-md-4 .dir-menu-item h3 {
+.page-id-44 .col-md-4 .dir-menu-item h3 {
   font-size: 23px;
   color: #444343;
   font-weight: 600;
   margin: 0 0 5px 0;
 }
 
-.academics .col-md-4 .dir-menu-item small {
+.page-id-44 .col-md-4 .dir-menu-item small {
   color: #f25d22;
   font-size: 14px;
   font-weight: 300;
 }
 
-.academics .col-md-4 .dir-menu-item ul li {
+.page-id-44 .col-md-4 .dir-menu-item ul li {
   padding-top: 20px;
 }
 
-.academics .col-md-4 .dir-menu-item ul li .glyphicon {
+.page-id-44 .col-md-4 .dir-menu-item ul li .glyphicon {
   font-size: 8px;
   top: -1px;
   right: 10px;
@@ -944,4 +961,29 @@ ul {
 
 .album-list-page .image-list .album-item {
   padding: 1px;
+}
+
+.slider-block #slider.flexslider {
+  box-shadow: 0 0 9.8px 0.2px rgba(31, 31, 30, 0.46);
+  border: 12px solid #fff;
+  border-radius: 3px;
+}
+
+.slider-block #slider.flexslider .flex-direction-nav {
+  display: none;
+}
+
+.slider-block #slider.flexslider .flex-direction-nav a {
+  margin: -20px 0 0;
+}
+
+.slider-block #carousel.flexslider {
+  border-right: 40px solid #f2f3f4;
+  border-left: 40px solid #f2f3f4;
+  padding: 10px;
+  background-color: #f2f3f4;
+}
+
+.slider-block #carousel.flexslider .flex-direction-nav a {
+  margin: -34px -40px 0;
 }

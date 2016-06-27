@@ -1,6 +1,12 @@
 /*common styles*/
 
-/*orange #f25d22*/
+body {
+	@font-face {
+	font-family: MyriadPro;
+	src: url("assets/fonts/MyriadPro-Regular.otf") format("opentype");
+	}
+	font-family: MyriadPro, sans-serif; 
+}
 * {
 	box-sizing:border-box;
 }
@@ -21,6 +27,11 @@
 }
 
 body {
+
+	@font-face {
+		font-family: "Myriad Pro";
+		src: url("../assets/fonts/MyriadPro/MyriadPro-Regular.otf") format("opentype");
+	}
 	font-family: 'Myriad Pro';
 	margin:0;
 	font-size: 14px;
