@@ -2,10 +2,10 @@
 
 body {
 	@font-face {
-	font-family: MyriadPro;
-	src: url("assets/fonts/MyriadPro-Regular.otf") format("opentype");
+	font-family: 'Myriad Pro';
+	src: url("/wp-content/themes/davebrook/fonts/MyriadPro/MyriadPro-Regular.otf") format("opentype");
 	}
-	font-family: MyriadPro, sans-serif; 
+	font-family: 'Myriad Pro', sans-serif; 
 }
 * {
 	box-sizing:border-box;
