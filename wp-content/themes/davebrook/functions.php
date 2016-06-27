@@ -206,11 +206,22 @@ function editcontacts() {
 
 			<p><strong>FAQs link:</strong><br />
 				<input type="text" name="faq-link" size="45" value="<?php echo get_option('faq-link'); ?>"</></p>
-			
+
+			<p><strong>FAQs link:</strong><br />
+				<input type="text" name="faq-link" size="45" value="<?php echo get_option('faq-link'); ?>"</></p>
+
+			<p><strong>Vision</strong><br />
+				<textarea rows="6" cols="50" name="vision"><?php echo get_option('vision'); ?></textarea>
+			</p>
+
+			<p><strong>Mission</strong><br />
+				<textarea rows="4" cols="50" name="mission"><?php echo get_option('mission'); ?></textarea>
+			</p>
+
 			<p><input type="submit" name="Submit" value="Update Options" /></p>
 
 			<input type="hidden" name="action" value="update" />
-			<input type="hidden" name="page_options" value="phone,addr,state,email,copy,faq-link" />
+			<input type="hidden" name="page_options" value="phone,addr,state,email,copy,faq-link,vision,mission" />
 
 		</form>
 	</div>
