@@ -28,10 +28,10 @@
             <div class="left-menu clearfix">
                 <ul class="nav">
                     <li class="sprite-bottom-menu gallery">
-                        <a href="#"> Gallery</a>
+                        <a href="<?php echo get_permalink(72); ?>"> Gallery</a>
                     </li>
                     <li class="sprite-bottom-menu news">
-                        <a href="#">News &amp; Events</a>
+                        <a href="<?php echo get_permalink(135); ?>">News &amp; Events</a>
                     </li>
                 </ul>
             </div>
@@ -59,44 +59,31 @@
         <div class="menu">
             <ul class="nav about">
                 <li>ABOUT US</li>
-                <li>Strategic Vision</li>
-                <li>Head of School</li>
-                <li>Strategic Vision</li>
-                <li>Faculty &amp; Staff</li>
-                <li>Employment Opportunities</li>
+                <?php wp_list_pages(array('child_of' => getPageParentId(40), 'title_li' => '', 'sort_column' => 'menu_order', 'depth' => 1)); ?>
             </ul>
         </div>
         <div class="menu admission">
             <ul class="nav">
                 <li>ADMISSION</li>
-                <li>Creche</li>
-                <li>Kindergarten</li>
-                <li>Primary</li>
-                <li>Tuition &amp; Financials</li>
-                <li>Admission Calendar</li>
+                <?php wp_list_pages(array('child_of' => getPageParentId(42), 'title_li' => '', 'sort_column' => 'menu_order', 'depth' => 1)); ?>
             </ul>
         </div>
         <div class="menu academics">
             <ul class="nav">
                 <li>ACADEMICS</li>
-                <li>Creche</li>
-                <li>Kindergarten</li>
-                <li>Primary</li>
+                <?php wp_list_pages(array('child_of' => getPageParentId(44), 'title_li' => '', 'sort_column' => 'menu_order', 'depth' => 1)); ?>
             </ul>
         </div>
         <div class="menu media-nav">
             <ul class="nav">
                 <li>MEDIA</li>
-                <li>Social Media</li>
-                <li>Photo Gallery</li>
-                <li>News</li>
+                <?php wp_list_pages(array('child_of' => getPageParentId(69), 'title_li' => '', 'sort_column' => 'menu_order', 'depth' => 1)); ?>
             </ul>
         </div>
         <div class="menu contact">
             <ul class="nav">
                 <li>CONTACT US</li>
-                <li>Getting Here</li>
-                <li>FAQs</li>
+                <?php wp_list_pages(array('child_of' => getPageParentId(168), 'title_li' => '', 'sort_column' => 'menu_order', 'depth' => 1)); ?>
             </ul>
         </div>
     </div>

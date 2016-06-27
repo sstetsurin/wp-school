@@ -105,7 +105,11 @@ function davebrook_scripts() {
 	wp_enqueue_style( 'davebrook-style', get_template_directory_uri() . '/style.css' );
 
 	wp_enqueue_script( 'davebrook-skip-link-focus-fix', get_template_directory_uri() . '/js/main.js', array(), '20151215', true );
-
+	wp_enqueue_script( 'davebrook-flexslider', get_template_directory_uri() . '/js/jquery.flexslider.js', array(), '20151215', true );
+	wp_enqueue_script( 'davebrook-vendors-easing', get_template_directory_uri() . '/js/jquery.easing.js', array(), '20151215', true );
+	wp_enqueue_script( 'davebrook-vendors-mousewheel', get_template_directory_uri() . '/js/jquery.mousewheel.js', array(), '20151215', true );
+	wp_enqueue_script( 'davebrook-vendors-demo', get_template_directory_uri() . '/js/demo.js', array(), '20151215', true );
+	wp_enqueue_script( 'davebrook-slider', get_template_directory_uri() . '/js/slider.js', array(), '20151215', true );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -250,20 +254,76 @@ function getNews() {
 	return $posts_array;
 }
 
-function get_snippet( $str, $wordCount = 55 ) {
+function get_snippet( $str, $wordCount = 55 )
+{
 	return implode(
 		'',
 		array_slice(
 			preg_split(
 				'/([\s,\.;\?\!]+)/',
 				$str,
-				$wordCount*2+1,
+				$wordCount * 2 + 1,
 				PREG_SPLIT_DELIM_CAPTURE
 			),
 			0,
-			$wordCount*2-1
+			$wordCount * 2 - 1
 		)
 	);
 }
 
+function getPageTitle($post) {
+ 	if ( is_page() && !$post->post_parent ) {
+		echo '<h1 class="title">'.get_the_title().'</h1>';
+	} elseif (is_page() && $post->post_parent) {
+		$parent_id = $post->post_parent;
+		$result = array();
+		while ($parent_id) {
+			$page = get_page($parent_id);
+			$result[] = get_the_title($page->ID);
+			$parent_id = $page->post_parent;
+		}
+		$result = array_reverse($result);
+		$result[] = get_the_title();
+		for ($i = 0; $i < count($result); $i++) {
+			if ($i == 0 ) {
+				echo '<h1 class="title">'.$result[$i].'</h1><span>';
+			} elseif ($i == 1) {
+				echo $result[$i];
+			} else {
+				echo '<small>'.$result[$i].'</small>';
+			}
+		}
+		echo '</span>';
+	}
+}
+
+function getGalleryImage($postMeta, $isFirst = false) {
+	$items = @unserialize($postMeta['_eg_gallery_data'][0]);
+	$items = @$items['gallery'];
+	if ( empty($items) ) {
+		return false;
+	}
+	$result = array();
+	foreach ( $items as $key => $value ) {
+		if ( $isFirst && $value['status'] == 'active' ) {
+			return array('src' => @$value['src'], 'title' => @$value['tile'] );
+		}
+		$result[] = array('src' => @$value['src'], 'title' => @$value['tile'] );
+	}
+	return $result;
+}
+
+add_action( 'init', 'create_post_type' );
+function create_post_type() {
+	register_post_type( 'envira',
+		array(
+			'labels' => array(
+				'name' => __( 'Galllery' ),
+				'singular_name' => __( 'Galllery Item' )
+			),
+			'public' => true,
+			'has_archive' => false,
+		)
+	);
+}
 ?>

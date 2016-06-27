@@ -13,7 +13,7 @@
     <div class="dark-line"></div>
     <div class="sidebar-menu">
         <ul class="nav">
-            <?php wp_list_pages(array('child_of' => getPageParentId($post->ID), 'title_li' => '', 'sort_column' => 'post_date')); ?>
+            <?php wp_list_pages(array('child_of' => getPageParentId($post->ID), 'title_li' => '', 'sort_column' => 'menu_order')); ?>
         </ul>
     </div>
 </div>
