@@ -531,6 +531,15 @@ ul {
   text-transform: uppercase;
 }
 
+.sitemap .menu .nav li a {
+  padding: 0;
+}
+
+.sitemap .menu .nav li a:hover, .sitemap .menu .nav li a:active, .sitemap .menu .nav li a:focus {
+  background-color: inherit;
+  text-decoration: none;
+}
+
 .sitemap .menu:before {
   content: "";
   display: block;
