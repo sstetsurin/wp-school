@@ -102,7 +102,7 @@ ul {
 .other-links li {
   float: left;
   width: auto;
-  padding: 4px 20px;
+  padding: 4px 10px;
   max-width: 150px;
 }
 
@@ -382,7 +382,7 @@ ul {
 }
 
 .footer-wrap .address .sitename {
-  padding-left: 60px;
+  padding-left: 40px;
   font-weight: 600;
 }
 
@@ -392,7 +392,7 @@ ul {
 
 .footer-wrap .bottom .left-menu {
   float: left;
-  padding-right: 130px;
+  padding-right: 100px;
 }
 
 .footer-wrap .bottom .left-menu ul > li {
