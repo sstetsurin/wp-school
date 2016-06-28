@@ -7,6 +7,15 @@ body {
   body {
     font-family: 'Myriad Pro';
     src: url("/wp-content/themes/davebrook/fonts/MyriadPro/MyriadPro-Regular.otf") format("opentype");
+    font-weight: normal;
+  }
+}
+
+@font-face {
+  body {
+    font-family: 'Myriad Pro';
+    src: url("/wp-content/themes/davebrook/fonts/MyriadPro/MyriadPro-It.otf") format("opentype");
+    font-weight: lighter;
   }
 }
 
@@ -912,6 +921,25 @@ ul {
   padding: 0;
 }
 
+.page-content .about-template .article.item {
+  padding: 30px 0;
+}
+
+.page-content .about-template .article.item p {
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+.page-content .about-template .article.item h6 {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.page-content .about-template .article.item.main {
+  padding-top: 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
 .page-content .about-template a {
   color: #f15d22;
   text-decoration: underline;
@@ -953,12 +981,25 @@ ul {
   border-bottom: 1px dashed white;
 }
 
+.page-content .right-sidebar .banner-item {
+  cursor: pointer;
+  padding-bottom: 50px;
+}
+
 .page-content .right-sidebar .photo-block {
   padding: 25px 0;
 }
 
+.page-content .content-header-photo {
+  padding: 0 15px 25px 0;
+}
+
 .envirabox-overlay {
   z-index: 999999 !important;
+}
+
+span.bold {
+  font-weight: bold;
 }
 
 .page-id-44 .col-md-4 {

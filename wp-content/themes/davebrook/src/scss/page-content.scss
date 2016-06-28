@@ -173,6 +173,21 @@
 					margin-bottom: 20px;
 					padding: 0;
 				}
+				&.item {
+					p {
+						margin-bottom: 0;
+						font-weight: 300;
+					}
+					h6 {
+						font-weight: 600;
+						font-size: 16px;
+					}
+					padding: 30px 0;
+					&.main {
+						padding-top: 0;
+						border-bottom:1px solid #eaeaea;
+					}
+				}
 			}
 			a {
 				color: #f15d22;
@@ -208,9 +223,16 @@
 					}
 				}
 			}
+			.banner-item {
+				cursor:pointer;
+				padding-bottom: 50px;
+			}
 			.photo-block {
 				padding: 25px 0;
 			}
+		}
+		.content-header-photo {
+			padding: 0 15px 25px 0;
 		}
 		
 
@@ -220,4 +242,8 @@
 // Media gallery Pop-up layout
 .envirabox-overlay {
 	z-index: 999999 !important;
+}
+
+span.bold {
+	font-weight:bold;
 }
