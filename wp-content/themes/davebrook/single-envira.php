@@ -24,6 +24,7 @@ $images = getGalleryImage($postmeta)
             </div>
             <div class="content clearfix">
                 <div class="slider-block loading">
+                <button class="btn back-gallery-btn glyphicon glyphicon-remove-circle"> <p> close</p> </button>
                     <div id="container" class="cf">
                         <div id="main" role="main">
                             <section class="slider">
@@ -33,6 +34,7 @@ $images = getGalleryImage($postmeta)
                                             <?php foreach ($images as $image): ?>
                                                 <li>
                                                     <img src="<?php echo $image['src']; ?>" alt="<?php echo $image['title']; ?>"/>
+
                                                 </li>
                                             <?php endforeach; ?>
                                         <?php  } ?>

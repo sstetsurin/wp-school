@@ -30,6 +30,23 @@
 }
 
 .slider-block {
+	position:relative;
+	.back-gallery-btn {
+		position:absolute;
+		top:-35px;
+		right:-90px;
+		display:block;
+		font-size: 	22px;
+		background-color: white;
+		p {
+			display:block;
+			margin-left:5px;
+			margin-top: 0px;
+			font-size:22px;
+			padding:0;
+			float:right;
+		}	
+	}
 	#slider.flexslider {
 		box-shadow: 0 0 9.8px 0.2px rgba(31, 31, 30, 0.46);
     	border: 12px solid #fff;

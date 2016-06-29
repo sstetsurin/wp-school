@@ -40,5 +40,11 @@ $(document).ready(function () {
 
 
 
+	$('.back-gallery-btn').on('click', function (e) {
+		e.preventDefault();
+		location.href = 'http://davebrook-school.u1176.indigo.elastictech.org/media/photo-gallery/';
+	})
+
+
 
 })
