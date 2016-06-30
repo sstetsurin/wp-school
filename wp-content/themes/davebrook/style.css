@@ -186,6 +186,10 @@ ul {
   background-image: url(/wp-content/themes/davebrook/images/social-sprite.png);
 }
 
+.social-wrap .social-sprite:hover {
+  background-image: url(/wp-content/themes/davebrook/images/social-sprite-hover.png);
+}
+
 .social-wrap .social-sprite.insta {
   background-position: 0 0;
 }
@@ -269,12 +273,20 @@ ul {
   padding: 0;
 }
 
-.bottom-nav .main-nav .menu-item a:hover, .bottom-nav .main-nav .menu-item a:focus, .bottom-nav .main-nav .menu-item a:visited {
+.bottom-nav .main-nav .menu-item a:focus, .bottom-nav .main-nav .menu-item a:visited {
   background-color: inherit;
+}
+
+.bottom-nav .main-nav .menu-item a:hover {
+  color: #f25e22;
 }
 
 .bottom-nav .main-nav .menu-item:last-child {
   padding: 0px 0 0px 25px;
+}
+
+.bottom-nav .main-nav .menu-item.current_page_parent > a {
+  color: #f25e22;
 }
 
 .bottom-nav .main-nav .sub-menu {
@@ -298,6 +310,24 @@ ul {
   line-height: 70px;
   text-align: center;
   border: 1px solid #e8e9e4;
+}
+
+.bottom-nav .main-nav .sub-menu li:hover {
+  background-color: #f25e22;
+  border: 1px solid #f25e22;
+}
+
+.bottom-nav .main-nav .sub-menu li:hover a {
+  color: white;
+}
+
+.bottom-nav .main-nav .sub-menu li.current_page_item {
+  background-color: #f25e22;
+  border: 1px solid #f25e22;
+}
+
+.bottom-nav .main-nav .sub-menu li.current_page_item a {
+  color: white;
 }
 
 .bottom-nav .main-nav .sub-menu li a {
@@ -433,10 +463,34 @@ ul {
   background-position: -5px -4px;
 }
 
+.footer-wrap .bottom .left-menu ul > li.sprite-bottom-menu.gallery:hover:before {
+  content: "";
+  display: block;
+  background: url(/wp-content/themes/davebrook/images/footer-sprite-hover.png);
+  background-repeat: no-repeat;
+  float: left;
+  margin: 0 6px 0 0;
+  width: 33px;
+  height: 28px;
+  background-position: -5px -4px;
+}
+
 .footer-wrap .bottom .left-menu ul > li.sprite-bottom-menu.news:before {
   content: "";
   display: block;
   background: url(/wp-content/themes/davebrook/images/footer-sprite.png);
+  background-repeat: no-repeat;
+  float: left;
+  margin: 0 6px 0 0;
+  width: 33px;
+  height: 26px;
+  background-position: -48px -2px;
+}
+
+.footer-wrap .bottom .left-menu ul > li.sprite-bottom-menu.news:hover:before {
+  content: "";
+  display: block;
+  background: url(/wp-content/themes/davebrook/images/footer-sprite-hover.png);
   background-repeat: no-repeat;
   float: left;
   margin: 0 6px 0 0;
@@ -477,6 +531,10 @@ ul {
   width: 36px;
   height: 40px;
   background-image: url(/wp-content/themes/davebrook/images/social-icon-footer-sprite.png);
+}
+
+.footer-wrap .bottom .social-footer-wrap .social-sprite:hover {
+  background-image: url(/wp-content/themes/davebrook/images/social-icon-footer-sprite-hover.png);
 }
 
 .footer-wrap .bottom .social-footer-wrap .social-sprite.tw {
@@ -645,6 +703,11 @@ ul {
   bottom: 45px;
 }
 
+.main-page-carousel .carousel-caption .more-btn:hover {
+  border: 1px solid #f25e22;
+  background-color: #f25e22;
+}
+
 .main-page-carousel .carousel-indicators {
   bottom: 150px;
 }
@@ -704,8 +767,12 @@ ul {
   padding: 0 0 0 35px;
 }
 
-.left-sidebar-wrap .sidebar-menu .page_item a:hover, .left-sidebar-wrap .sidebar-menu .page_item a:focus, .left-sidebar-wrap .sidebar-menu .page_item a:visited {
+.left-sidebar-wrap .sidebar-menu .page_item a:focus, .left-sidebar-wrap .sidebar-menu .page_item a:visited {
   background-color: inherit;
+}
+
+.left-sidebar-wrap .sidebar-menu .page_item a:hover {
+  background-color: #a9a9a9;
 }
 
 .left-sidebar-wrap .sidebar-menu .page_item.current_page_item, .left-sidebar-wrap .sidebar-menu .page_item.current_page_parent, .left-sidebar-wrap .sidebar-menu .page_item.current_page_ancestor {
@@ -1070,6 +1137,11 @@ span.bold {
 
 .album-list-page .image-list .album-item {
   padding: 1px;
+}
+
+.album-list-page .image-list .album-item img {
+  width: 260px;
+  height: 260px;
 }
 
 .slider-block {

@@ -118,6 +118,19 @@
 							    height: 28px;
 							    background-position: -5px -4px;
 							}
+							&:hover {
+								&:before {
+								    content: "";
+								    display: block;
+								    background: url(/wp-content/themes/davebrook/images/footer-sprite-hover.png);
+		    					    background-repeat: no-repeat;
+								    float: left;
+								    margin: 0 6px 0 0;
+	    				    	    width: 33px;
+								    height: 28px;
+								    background-position: -5px -4px;
+								}						   
+							}
 					    }
 					    &.news {
 					    	&:before {
@@ -130,6 +143,19 @@
 								width: 33px;
 							    height: 26px;
 							    background-position: -48px -2px;
+					    	}
+					    	&:hover {
+					    		&:before {
+				    				content: "";
+								    display: block;
+								    background: url(/wp-content/themes/davebrook/images/footer-sprite-hover.png);
+		    					    background-repeat: no-repeat;
+								    float: left;
+								    margin: 0 6px 0 0;
+									width: 33px;
+								    height: 26px;
+								    background-position: -48px -2px;
+					    		}
 					    	}
 					    }
 					}
@@ -163,7 +189,9 @@
 			    width:36px;
 			    height:40px;
 		    	background-image: url(/wp-content/themes/davebrook/images/social-icon-footer-sprite.png);
-
+				&:hover {
+					background-image: url(/wp-content/themes/davebrook/images/social-icon-footer-sprite-hover.png);
+				}
 		    	&.tw {
 					background-position: 0 0;
 		    	}

@@ -97,6 +97,9 @@
 	    width:20px;
 	    height:15px;
     	background-image: url(/wp-content/themes/davebrook/images/social-sprite.png);
+    	&:hover {
+    		background-image: url(/wp-content/themes/davebrook/images/social-sprite-hover.png);
+    	}
 	    &.insta {
 	    	background-position: 0 0;
 	    }
@@ -165,12 +168,20 @@
 			& a {
 				color: #080404;
 				padding: 0;
-				&:hover, &:focus, &:visited {
+				&:focus, &:visited {
 					background-color: inherit;
+				}
+				&:hover {
+					color: #f25e22;
 				}
 			}
 			&:last-child {
 				padding: 0px 0 0px 25px;
+			}
+			&.current_page_parent {
+				&>a {
+					color:#f25e22;
+				}
 			}
 		}
 		.sub-menu {
@@ -189,6 +200,20 @@
     			line-height: 70px;
     			text-align: center;
     			border:1px solid #e8e9e4;
+    			&:hover {
+    				background-color: #f25e22;
+    				border:1px solid #f25e22;
+    				a {
+    					color: white;
+    				}
+    			}
+    			&.current_page_item {
+     				background-color: #f25e22;
+    				border:1px solid #f25e22;
+    				a {
+    					color: white;
+    				}   				
+    			}
     			a {
     				font-weight: 300;
     				text-transform: none;

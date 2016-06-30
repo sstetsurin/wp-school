@@ -16,9 +16,12 @@
 				color: white;
 				line-height: 62px;
 				padding: 0 0 0 35px;
-				&:hover, &:focus, &:visited {
+				&:focus, &:visited {
 					background-color: inherit;
 					// text-transform: none;
+				}
+				&:hover {
+					background-color: #a9a9a9;
 				}
 			}
 			&.current_page_item, &.current_page_parent, &.current_page_ancestor {

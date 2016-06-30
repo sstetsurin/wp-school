@@ -58,6 +58,10 @@
 		    left:0;
 		    right:0;
 		    bottom:45px;
+		    &:hover {
+		    	border:1px solid #f25e22;
+		    	background-color: #f25e22
+		    }
 		}
 	}
 		.carousel-indicators {
