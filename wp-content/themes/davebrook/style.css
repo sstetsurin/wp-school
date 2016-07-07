@@ -285,7 +285,7 @@ ul {
   padding: 0px 0 0px 25px;
 }
 
-.bottom-nav .main-nav .menu-item.current_page_parent > a {
+.bottom-nav .main-nav .menu-item.current_page_parent > a, .bottom-nav .main-nav .menu-item.current-menu-item > a, .bottom-nav .main-nav .menu-item.current-page-ancestor > a {
   color: #f25e22;
 }
 
@@ -795,6 +795,11 @@ ul {
   padding-left: 15px;
   color: #444343;
   text-transform: none;
+}
+
+.left-sidebar-wrap .sidebar-menu .children .page_item a:hover, .left-sidebar-wrap .sidebar-menu .children .page_item a:active, .left-sidebar-wrap .sidebar-menu .children .page_item a:focus {
+  background-color: inherit;
+  color: #f25d22;
 }
 
 .left-sidebar-wrap .sidebar-menu .children .page_item.current_page_item {

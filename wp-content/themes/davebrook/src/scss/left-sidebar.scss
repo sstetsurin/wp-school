@@ -40,6 +40,10 @@
 					padding-left: 15px;
 					color: #444343;
 					text-transform:none;
+					&:hover, &:active, &:focus {
+						background-color: inherit;
+						color:#f25d22;
+					}
 				}
 
 				&.current_page_item {

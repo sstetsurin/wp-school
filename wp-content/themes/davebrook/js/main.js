@@ -18,9 +18,12 @@ $(document).ready(function () {
 
 	$('.sidebar-menu').on('click', function (e) {
 		var target = $(e.target);
-		if (target.closest('.page_item').hasClass('page_item_has_children')) {
+		var closest = target.closest('.page_item');
+		if (closest.hasClass('page_item_has_children')) {
 			e.preventDefault();
-			target.closest('.page_item').children('ul.children').show();
+			var link = closest.children('ul.children').children('li:first-child').children('a').attr('href');
+			window.location.href = link;
+
 
 		}
 	})
@@ -44,6 +47,7 @@ $(document).ready(function () {
 		e.preventDefault();
 		location.href = 'http://davebrook-school.u1176.indigo.elastictech.org/media/photo-gallery/';
 	})
+
 
 
 

@@ -178,7 +178,7 @@
 			&:last-child {
 				padding: 0px 0 0px 25px;
 			}
-			&.current_page_parent {
+			&.current_page_parent, &.current-menu-item, &.current-page-ancestor {
 				&>a {
 					color:#f25e22;
 				}
